@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment2 Login Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: black;
+            height: 600px;
+            width: 60%;
+            margin: 5% 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:whitesmoke;
+            height: 400px;
+            width: 350px;
+            border-radius: 10px;
+        }
+        h1{
+            color: blue;
+        }
+        input{
+            font-size: 20px;
+            margin: 20px;
+            padding: 5px;
+        }
+        #btn{
+            background-color: dodgerblue;
+            font-size: 20px;
+            height: 40px;
+            width: 73%;
+            box-shadow: 2px 3px black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <h1>Login</h1>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button id="btn">Login</button>
+        </div>
+    </div>
+</body>
+</html>

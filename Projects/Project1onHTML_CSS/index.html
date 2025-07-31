@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Responsive Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="top_portion">
+            <div class="my_name">
+                <h1>Md Raj</h1>
+            </div>
+            <div class="my_image">
+                <img src="./images/image.png" alt="myImage">
+            </div>
+        </div>
+
+        <div id="about">
+            <h1>About Me</h1>
+            <p>
+                As a highly motivated and detail-oriented Computer Science Engineer , I specialize in designing, developing, and deploying scalable and efficient web applications utilizing <span class="highlight">HTML CSS & JS technology.</span> With a strong foundation in computer science and a passion for innovative problem-solving, I excel in <span class="highlight">crafting front-end solutions.</span> Proficient in HTML, CSS, JavaScript, and responsive design, I deliver high-quality, user-friendly interfaces that provide seamless user experiences. I stay <span class="highlight">up-to-date with industry trends</span> and best practices, continuously enhancing my skills to drive exceptional results in agile development environments. With a collaborative mindset and <span class="highlight">excellent communication skills,</span> I effectively work with cross-functional teams to identify requirements, design solutions, and implement projects efficiently.
+            </p>
+        </div>
+
+        <div id="skills">
+            <h1>Skills</h1>
+            <dl>
+                <dt>Programming Languages</dt>
+                <dd> C | C++ | Java</dd>
+                <dt>Web Technologies</dt>
+                <dd>HTML5 | CSS3 | JS</dd>
+                <dt>Version Control</dt>
+                <dd>Git & Git Hub</dd>
+            </dl>
+        </div>
+
+        <div id="education">
+            <h1>Education</h1>
+            <table>
+                <caption>My Qualifications</caption>
+                <tr>
+                    <th>Year</th>
+                    <th>Class</th>
+                    <th>School</th>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>Secondary</td>
+                    <td>Rajasthan Vidyapith Purulia</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Higher Secondary</td>
+                    <td>Rajasthan Vidyapith Purulia</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Diploma in Computer Science & Technology </td>
+                    <td>Raghunathpur Government Polytechnic College </td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>B.Tech in Computer Science & Engineering </td>
+                    <td>Greater Kolkata College of Engineering & Management</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="container">
+                <div>
+                    <figure>
+                        <img src="./images/parallax.png" alt="image">
+                        <figcaption>Parallax Website </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./images/tribute.png" alt="image">
+                        <figcaption>Tribute Website </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./images/developr.avif" alt="image">
+                        <figcaption>Developer Landing Page </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./images/resturanr.jpeg" alt="image">
+                        <figcaption> Resturant Website </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./images/ecom.jpeg" alt="image">
+                        <figcaption>E-Commerce Website </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h1>Contact Me</h1>
+            <form>
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="your email@gmail.com" required>
+                    <br>
+                    <br>
+                    <label for="msg">Drop your message:</label>
+                    <textarea name="feedback" rows="5" cols="15"></textarea>
+                    <button>Send</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+    <p>Connect with me:</p>
+    <div class="social-icons">
+        <a href="https://github.com/RAJ08121999" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-raj-9b7443227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/mdraj81299" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:rajmd1800@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    <p>&copy; 2025 Md Raj. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

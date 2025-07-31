@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section starts here */
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: lightgray;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+header nav ul li a{
+    font-size: 20px;
+    color:dodgerblue ;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    display: inline-block;
+}
+
+header nav ul li a:hover{
+    padding: 5px;
+    color: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(12, 28, 34, 0.6);
+    transform: scale(1.2);
+}
+
+/* main section starts here */
+
+/* top portion starts here */
+.top_portion{
+    background-color: gray;
+    margin-bottom: 20px;
+}
+.top_portion .my_name h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkblue;
+}
+
+.top_portion .my_image{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.top_portion .my_image img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    filter: drop-shadow(4px 4px 8px rgba(1, 24, 60, 0.8));
+}
+
+/* About section starts here */
+
+#about {
+    width: 75%;
+    margin: 0 auto;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+#about h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+}
+#about p{
+    padding: 10px;
+    font-size: 20px;
+    color:cornflowerblue;
+    line-height: 2rem;
+    margin: 20px;
+    text-align: center;
+}
+.highlight{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Skills section starts here */
+
+#skills{
+    margin-top: 20px;
+    background-color: gray;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+#skills h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+}
+#skills dl{
+    text-align: center;
+    line-height: 3rem;
+}
+#skills dt{
+    font-size: 25px;
+    font-weight: 400;
+}
+#skills dd{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* education section starts here */
+
+#education{
+    background-color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#education h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#education table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+#education table{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: dodgerblue;
+}
+table tr:nth-child(even){
+    background-color:darkgray;
+}
+
+/* Projects section starts here */
+
+#projects{
+    background-color: gray;
+    margin-bottom: 20px;
+}
+#projects h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#projects .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects .container div{
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+figure{
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    margin: 0;
+    position: relative;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;               
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Contact section starts here */
+
+#contact{
+    background-color: lightgray;
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+}
+#contact h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* footer part */
+
+#footer {
+    background-color:gray;
+    color: darkblue;
+    text-align: center;
+    padding: 30px 20px;
+
+}
+
+#footer p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons a {
+    color:dodgerblue;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: darkblue;
+}
+
+
+/* media query for responsiveness */
+
+/* Tablets (portrait and landscape) — up to 992px */
+@media screen and (max-width: 992px) {
+    header nav ul {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .top_portion .my_name h1 {
+        font-size: 40px;
+    }
+
+    #about p,
+    #skills dd,
+    #skills dt {
+        font-size: 18px;
+    }
+
+    #projects .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #education table {
+        font-size: 18px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+/* Mobile Devices — up to 768px */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .top_portion .my_name h1 {
+        font-size: 30px;
+    }
+
+    .top_portion .my_image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #about {
+        width: 90%;
+    }
+
+    #about p {
+        font-size: 16px;
+        line-height: 1.6rem;
+        margin: 10px;
+    }
+
+    #skills dt {
+        font-size: 20px;
+    }
+
+    #skills dd {
+        font-size: 16px;
+    }
+
+    #education table {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #projects .container div {
+        width: 90%;
+        height: auto;
+    }
+
+    figure {
+        width: 100%;
+        height: auto;
+    }
+
+    figure img {
+        height: auto;
+    }
+
+    figcaption {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #footer p {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+}

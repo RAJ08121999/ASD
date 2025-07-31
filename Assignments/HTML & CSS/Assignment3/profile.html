@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Assignment: Build a Personal Web Profile </title>
+    <style>
+        /*Css is used to beautify or to make attractive the web page*/
+
+        img{
+            /* it is an example of element selector in CSS 
+            it will be applied in all elements if id or class is not mentioned within that elements*/
+
+            height: 190px;
+            width: 210px;
+            border: 5px solid orange;
+            border-radius: 50%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: darkolivegreen;
+        }
+        .profile-card{
+            /* it is an example of class selector in CSS
+            class selector is used to select multiple elements in one go and to beautify it with a single code block */
+
+            font-family: 'Times New Roman', Times, serif;
+            background-color:dodgerblue;
+            border: 2px solid maroon;
+            border-radius:10px;
+            padding: 10px;
+        }
+        #name{
+            /* it is an example of id selector in CSS 
+            ID selector is used to select individual elements with specific id name and the beautify it*/
+
+            text-align: center;
+            font-size: 40px;
+            color: brown;
+        }
+        #intro{
+            background-color:lightseagreen;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="profile-card">
+        <img src="./image.png" title="Md Raj" alt="my profile pic">
+        <h1 id="name">Md Raj</h1>
+        <div id="intro">
+            <p>
+            As a highly motivated and detail-oriented <b>Computer Science & Engineering Student </b> , I specialize in designing, developing, and deploying scalable and efficient web applications.
+            With a strong foundation in computer science and a passion for <u>innovative problem-solving,</u> 
+            <strong>I excel in crafting dynamic front-end solutions. Proficient in HTML, CSS, JavaScript, and responsive design</strong>,<strong> I deliver high-quality, user-friendly interfaces that provide seamless user experiences. </strong> <mark>I stay up-to-date with industry trends and best practices, continuously enhancing my skills to drive exceptional results in agile development environments.</mark> With a collaborative mindset and excellent communication skills, I effectively work with cross-functional teams to identify requirements, design solutions, and implement projects efficiently.
+        </p>
+        </div>
+    </div>
+</body>
+</html>

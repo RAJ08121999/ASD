@@ -1,0 +1,127 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+p,ol >li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+ol li{
+    font-weight: 500;
+    line-height: 3rem;
+    color: blue;
+}
+
+.Parent{
+    color: red;
+    font-family: cursive;
+    line-height: 2rem;
+    border: 2px solid green;
+}
+
+.child1,.child2{
+    border:inherit;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav ul li:hover{
+    color: green;
+    cursor: pointer;
+    text-shadow: 2px 2px yellow;
+    font-size: 30px;
+    border: 2px solid maroon;
+
+}
+
+nav ul li:first-child{
+    color:darkgoldenrod;
+}
+
+nav ul li:nth-child(even){
+    color:darkmagenta;
+}
+
+nav ul li a:visited{
+    color:red;
+}
+
+.form-container{
+    margin: 20px;
+    border: 2px solid red;
+    padding: 20px;
+
+}
+
+input:focus{
+    border: 3px solid blueviolet;
+    background-color:lightblue;
+    color: blueviolet;
+}
+
+table, th, td, tr{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table tr:nth-child(even){
+    background-color: yellow;
+}
+
+table tr:nth-child(odd){
+    background-color:pink;
+}
+
+.child2 p::first-letter{
+    font-size: 40px;
+}
+
+.child2 p::first-line{
+    color: darkblue;
+}
+.child2 p::selection{
+    color:lightblue ;
+}
+
+.child1 p::before{
+    content: "\1F600";
+    font-size: 2em;
+    color: yellow;
+}
+
+.child1 p::after{
+    content: "\1F600";
+    font-size: 2em;
+    color: yellow;
+}
+
+section p::before{
+    content: "\1F600";
+    font-size: 2em;
+    color: yellow;
+}
+
+section h1+p{
+    color: red;
+}
+section>h1{
+    font-size: 35px;
+    background-color: rgb(26, 63, 96);
+}

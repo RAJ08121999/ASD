@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        nav ul{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+
+        }
+        nav ul li{
+            font-size: 20px;
+            list-style-type: none;
+        }
+        nav ul li a{
+            text-decoration:none;
+        }
+        table , tr, th, td, caption{
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .heading{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+        }
+        img{
+            float: left;
+        }
+        form ,input{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./gkcem-logo-298x300.png" alt="logo"width="70px" class="logo">
+        <div class="heading">
+            <h1><u>Greater Kolkata College Of Engineering & Management</u></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="user_info" id="form">
+            <form>
+                <fieldset>
+                    <legend>Student Registration Form</legend>
+                    <label for="name">Full Name:</label> 
+                    <input type="text" placeholder="Enter Your Full Name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter Your Email" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" placeholder="Enter Password" required><br>
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female <br>
+                    <label for="course">Choose Your Course:</label>
+                    <input type="checkbox" name="C">C
+                    <input type="checkbox" name="HTML">HTML
+                    <input type="checkbox" name="CSS">CSS
+                    <input type="checkbox" name="JS">JS <br>
+                    <label for="country">Country</label>
+                    <select>
+                        <option value="Russia">Russia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                        <option value="CHINA">CHINA</option>
+                        <option value="BRAZIL">BRAZIL</option>
+                        <option value="AUSTRALIA">AUSTRALIA</option>
+                        <option value="INDIA">INDIA</option>
+                    </select> <br>
+                    <label for="feedback">Give feedback:</label>
+                    <textarea rows="5" cols="20"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+
+
+        <section class="out_info" id="table">
+            <table align="center">
+                <caption>Student Details</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Md Raj</td>
+                        <td>raj@google.com</td>
+                        <td>C|EH</td>
+                        <td>INDIA</td>
+                    </tr>
+                    <tr>
+                        <td>Salman Khan</td>
+                        <td>sallu@bollywood.com</td>
+                        <td>PenTest</td>
+                        <td>CHINA</td>
+                    </tr>
+                    <tr>
+                        <td>Yuvraj Singh</td>
+                        <td>yuvi@icc.com</td>
+                        <td>JS</td>
+                        <td>BRAZIL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
